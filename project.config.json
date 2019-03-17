@@ -3,9 +3,10 @@
 	"setting": {
 		"urlCheck": true,
 		"es6": false,
-		"postcss": false,
+		"postcss": true,
 		"minified": false,
-		"newFeature": true
+		"newFeature": true,
+		"autoAudits": false
 	},
 	"compileType": "miniprogram",
 	"appid": "wx711255f1d8f798fd",
