@@ -33,10 +33,15 @@ page {
 
 <script>
 import wepy from 'wepy'
+import 'wepy-async-function'
 
 export default class extends wepy.app {
   config = {
-    pages: ['pages/index', 'pages/user'],
+    pages: [
+      'pages/index',
+      'pages/user',
+      'pages/auth/login'
+    ],
     window: {
       backgroundTextStyle: 'light',
       navigationBarBackgroundColor: '#fff',
@@ -70,9 +75,6 @@ export default class extends wepy.app {
   }
 
   onLaunch() {
-    wepy.login().then(res => {
-      console.log('login: ', res)
-    })
   }
 }
 </script>
